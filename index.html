@@ -13,18 +13,23 @@
       font-family: "Arial", sans-serif;
     }
 
+    html, body {
+      height: 100%;
+    }
+
     body {
-      height: 100vh;
+      min-height: 100vh;
     }
 
     .coming-soon {
       height: 100vh;
       width: 100%;
+      /* subtle black overlay placed via the semi-transparent gradient */
       background: linear-gradient(
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6)
+          rgba(0, 0, 0, 0.35),
+          rgba(0, 0, 0, 0.35)
         ),
-        url("bg.jpg") center/cover no-repeat;
+        url("dark-planet-space-landscape.jpg") center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
