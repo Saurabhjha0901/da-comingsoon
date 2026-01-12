@@ -35,6 +35,7 @@
       justify-content: center;
       text-align: center;
       color: #ffffff;
+      position: relative; /* allow absolute-positioned contact block */
     }
 
     .coming-soon img {
@@ -49,6 +50,29 @@
       letter-spacing: 4px;
       font-weight: 700;
     }
+
+    /* Contact/address block */
+    .contact {
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.45);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      color: #fff;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .contact a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
   </style>
 </head>
 
@@ -59,6 +83,12 @@
       <img src="PHOTO-2025-02-20-16-46-33-removebg-preview.png" alt="Drone Anatomy Logo" />
       <h1>The Website it Under Maintenance.</h1>
     </div>
+
+    <!-- Contact/address block placed below the coming-soon content -->
+    <address class="contact">
+      <span>Call us: <a href="tel:+12345678901">+1 234-567-8901</a></span>
+      <span>Email: <a href="mailto:info@droneanatomy.com">info@droneanatomy.com</a></span>
+    </address>
   </section>
 </body>
 </html>
